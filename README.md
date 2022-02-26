@@ -54,8 +54,8 @@ Once everything is all set, you may use the following CRUD functionality on any 
 
 ### Add
 ```
-//Instatiate
-<Name Of App and with the 'Context' word> context = new <Name Of App and with the 'Context' word>();
+//Instantiate
+<Name of App and with the 'Context' word> context = new <Name Of App and with the 'Context' word>();
  ....
  ....
  context.Students.Add(new Student()
@@ -67,8 +67,8 @@ Once everything is all set, you may use the following CRUD functionality on any 
 ```
 ### Update
 ```
-//Instatiate
-<Name Of App and with the 'Context' word> context = new <Name Of App and with the 'Context' word>();
+//Instantiate
+<Name of App and with the 'Context' word> context = new <Name Of App and with the 'Context' word>();
  ....
  ....
 Student student = context.Students.Find(<value>);
@@ -79,8 +79,8 @@ context.SaveChanges();
 ````
 ### Delete
 ```
-//Instatiate
-<Name Of App and with the 'Context' word> context = new <Name Of App and with the 'Context' word>();
+//Instantiate
+<Name of App and with the 'Context' word> context = new <Name Of App and with the 'Context' word>();
  ....
  ....
  Student student = context.Students.Find(<integer value>;
@@ -89,8 +89,8 @@ context.SaveChanges();
 ````
 ### Read
 ```
-//Instatiate
-<Name Of App and with the 'Context' word> context = new <Name Of App and with the 'Context' word>();
+//Instantiate
+<Name of App and with the 'Context' word> context = new <Name Of App and with the 'Context' word>();
  ....
  ....
  //If using DataGridView
