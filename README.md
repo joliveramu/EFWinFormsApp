@@ -1,7 +1,7 @@
 # EFWinFormsApp
 Basic C# CRUD Application using EntityFramework
 
-##How to install?
+## How to install?
 You must first download **EntityFramework** from your NuGet Package Manager.
 
 You may install it in the NuGet Package Manager/Console inside the Visual Studio by running the command
@@ -50,9 +50,9 @@ Update-Database
 
 Once everything is all set, you may use the following CRUD functionality on any page/forms of preference:
 
-##Usage
+## Usage
 
-###Add
+### Add
 ```
 //Instatiate
 <Name Of App and with the 'Context' word> context = new <Name Of App and with the 'Context' word>();
@@ -65,7 +65,7 @@ Once everything is all set, you may use the following CRUD functionality on any 
  });
  context.SaveChanges();
 ```
-###Update
+### Update
 ```
 //Instatiate
 <Name Of App and with the 'Context' word> context = new <Name Of App and with the 'Context' word>();
@@ -77,7 +77,7 @@ student.LastName = <value>;
 context.Entry(student).State = EntityState.Modified;
 context.SaveChanges();
 ````
-###Delete
+### Delete
 ```
 //Instatiate
 <Name Of App and with the 'Context' word> context = new <Name Of App and with the 'Context' word>();
@@ -87,7 +87,7 @@ context.SaveChanges();
  context.Students.Remove(student);
  context.SaveChanges();
 ````
-###Read
+### Read
 ```
 //Instatiate
 <Name Of App and with the 'Context' word> context = new <Name Of App and with the 'Context' word>();
