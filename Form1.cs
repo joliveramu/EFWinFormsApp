@@ -97,5 +97,13 @@ namespace EFWinFormsApp
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void dgvData_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row = this.dgvData.Rows[e.RowIndex];
+            txtID.Text = row.Cells["ID"].Value.ToString();
+            txtFirstName.Text = row.Cells["FirstName"].Value.ToString();
+            txtLastName.Text = row.Cells["LastName"].Value.ToString();
+        }
     }
 }

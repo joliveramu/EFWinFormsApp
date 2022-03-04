@@ -89,8 +89,10 @@ namespace EFWinFormsApp
             this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvData.Location = new System.Drawing.Point(264, 63);
             this.dgvData.Name = "dgvData";
+            this.dgvData.ReadOnly = true;
             this.dgvData.Size = new System.Drawing.Size(388, 123);
             this.dgvData.TabIndex = 5;
+            this.dgvData.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvData_CellClick);
             // 
             // btnUpdate
             // 
@@ -115,6 +117,7 @@ namespace EFWinFormsApp
             // 
             this.txtID.Location = new System.Drawing.Point(108, 79);
             this.txtID.Name = "txtID";
+            this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(100, 20);
             this.txtID.TabIndex = 7;
             // 
